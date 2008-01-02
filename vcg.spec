@@ -12,6 +12,7 @@ Group: Graphics
 URL: http://www.cs.uni-sb.de/RW/users/sander/html/gsvcg1.html
 Source: ftp://ftp.cs.uni-sb.de/pub/graphics/vcg/vcg.tar.bz2
 Patch: vcg.1.30-fix-build.patch
+BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: X11-devel
 
 %description
