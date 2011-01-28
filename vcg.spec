@@ -1,6 +1,6 @@
 %define name vcg
 %define version 1.30
-%define rel 8
+%define rel 9
 %define release %mkrel %{rel}
 
 Summary: The VCG visualization tool for compiler graphs
