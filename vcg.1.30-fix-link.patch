@@ -1,0 +1,44 @@
+--- src/Makefile.link	2011-01-28 10:38:58.000000000 +0100
++++ src/Makefile	2011-01-28 10:39:18.000000000 +0100
+@@ -95,7 +95,7 @@
+ # LIBRARIES = -lsuntool -lsunwindow -lpixrect -lm 
+ #
+ # Libraries for X11 
+-LIBRARIES = -lXext -lX11 -lm 
++LIBRARIES = -lX11 -lm 
+ 
+ #-------------------------- Tools ------------------------------
+ 
+--- preconf/X11gccLinux/tMakefile.link	2011-01-28 10:45:35.000000000 +0100
++++ preconf/X11gccLinux/tMakefile	2011-01-28 10:45:50.000000000 +0100
+@@ -117,7 +117,7 @@
+ #
+ # Libraries for X11
+ # LIBRARIES = -lXext -lX11 -lm
+-LIBRARIES = -lXext -lX11 -lm
++LIBRARIES = -lX11 -lm
+ 
+ #-------------------------- Tools ------------------------------
+ 
+--- config.link	2011-01-28 10:48:23.000000000 +0100
++++ config	2011-01-28 10:48:30.000000000 +0100
+@@ -1275,7 +1275,7 @@
+ 	echo "Which libraries do we need ..."
+ 	case "$mywindowsystem" in 
+ 	  "#define X11")
+-		mydefault="-lXext -lX11 -lm";;
++		mydefault="-lX11 -lm";;
+ 	  "#define SUNVIEW")
+ 		mydefault="-lsuntool -lsunwindow -lpixrect -lm";;
+ 	esac
+--- preconf/tMakefile.link	2011-01-28 10:49:06.000000000 +0100
++++ preconf/tMakefile	2011-01-28 10:49:20.000000000 +0100
+@@ -117,7 +117,7 @@
+ #
+ # Libraries for X11
+ # LIBRARIES = -lXext -lX11 -lm
+-LIBRARIES = -lXext -lX11 -lm
++LIBRARIES = -lX11 -lm
+ 
+ #-------------------------- Tools ------------------------------
+ 
