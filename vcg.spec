@@ -51,3 +51,50 @@ rm -rf $RPM_BUILD_ROOT
 %doc COPYING README expl
 %{_bindir}/*
 %{_mandir}/*/*
+
+
+%changelog
+* Fri Jan 28 2011 Funda Wang <fwang@mandriva.org> 1.30-9mdv2011.0
++ Revision: 633665
+- rebuild
+- fix link
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 1.30-8mdv2008.1
++ Revision: 140925
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - buildrequires X11-devel instead of XFree86-devel
+
+* Fri Apr 27 2007 Pixel <pixel@mandriva.com> 1.30-8mdv2008.0
++ Revision: 18589
+- rebuild
+
+
+* Fri May 06 2005 Pixel <pixel@mandriva.com> 1.30-7mdk
+- %%mkrel
+- fix build on lib64
+
+* Fri Nov 12 2004 Pixel <pixel@mandrakesoft.com> 1.30-6mdk
+- rebuild
+
+* Thu Aug 14 2003 Pixel <pixel@mandrakesoft.com> 1.30-5mdk
+- fix MANEXT to .1 instead of .l
+
+* Fri Apr 25 2003 Pixel <pixel@mandrakesoft.com> 1.30-4mdk
+- don't use %%make, it seems to break
+- add "BuildRequires: XFree86-devel"
+
+* Fri Oct 19 2001 Pixel <pixel@mandrakesoft.com> 1.30-3mdk
+- make rpmlint happy
+
+* Thu Oct 18 2001 Lenny Cartier <lenny@mandrakesoft.com> 1.30-2mdk
+- rebuild
+
+* Thu Dec 28 2000 Pixel <pixel@mandrakesoft.com> 1.30-1mdk
+- initial spec
+
