@@ -14,6 +14,7 @@ Source: ftp://ftp.cs.uni-sb.de/pub/graphics/vcg/vcg.tar.bz2
 Patch0: vcg.1.30-fix-build.patch
 Patch1: vcg.1.30-fix-link.patch
 BuildRoot: %{_tmppath}/%{name}-buildroot
+BuildRequires:	make
 BuildRequires: libx11-devel
 
 %description
